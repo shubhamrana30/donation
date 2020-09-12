@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link href="home_style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="left active" href="#">HOME</a>
+            <a class="left" href="#">ABOUT</a>
+            <a class="right" href="/logout">LOG OUT</a>
+        </div>
+        <% donaters.forEach(element=>{ %>
+            <div>
+                <h1>
+                    <%= element.name %> 
+                </h1>
+                <h1><%= element.amount %> </h1>
+            </div>
+        <% }) %>
+        <div>
+            <form method="POST" action="/donate">
+                <input type="submit" value="Donate"/>
+            </form>
+        </div>
+    </body>
+</html>
