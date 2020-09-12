@@ -2,11 +2,16 @@
     {
         "id": 1,
         "name": "chatur",
-        "amount": 11
+        "amount": 12
     },
     {
         "id": 2,
         "name": "mukul",
-        "amount": 12
+        "amount": 11
+    },
+    {
+        "id": 3,
+        "name": "joshi",
+        "amount": 10
     }
 ]
