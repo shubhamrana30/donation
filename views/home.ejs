@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link href="home_style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="first">
+        <div class="topnav">
+            <a class="left active" href="#">HOME</a>
+            <a class="left" href="#">ABOUT</a>
+            <a class="right" href="signin">SIGN IN</a>
+            <a class="right" href="#">SIGN UP</a>
+        </div>
+        <h1 style="color: aliceblue;">Top Donater</h1>
+        <ol>
+            <% donaters.forEach(element=>{ %>
+                <li><h2 style="color: aliceblue;"><%= element.name %> </h2></li>
+            <% }) %>  
+        </ol>
+        <div>
+            <a href="/signin">SIGN IN TO DONATE</a>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            var stripepublickey="<%= stripepublickey %>"
+        </script>
+        
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="left" href="/">HOME</a>
+        </div>
+        <div>
+            <div>
+                <input type="text" class="data" placeholder="Name" required/>
+            </div>
+
+            <div>
+                <input type="text" class="data" placeholder="Line1" required/>
+            </div>
+            <div>
+                <input type="text" class="data" placeholder="Postal Code" required/>
+            </div>
+            <div>
+                <input type="text" class="data" placeholder="City" required/>
+            </div>
+            <div>
+                <input type="text" class="data" placeholder="State" required/>
+            </div>
+            <div>
+                <input type="text" class="data" placeholder="Country" required/>
+            </div>
+            <div>
+                <input type="number" class="data" placeholder="amount" required/>
+            </div>
+            <button onclick="donate_clicked()">
+                Donate
+            </button>
+        </div>
+        <script src="donate.js" defer></script>
+    </body>
+</html>
